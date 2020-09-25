@@ -43,7 +43,7 @@ def get_details(url, name):
 
 
 
-ii = 0
+ii = 0   # 控制获取前10个电影
 for tags in bs_info.find_all('div', attrs={'class': 'channel-detail movie-item-title'}):
     if ii < 10:
         for atag in tags.find_all('a'):
