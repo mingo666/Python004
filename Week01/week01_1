@@ -38,7 +38,7 @@ def get_details(url, name):
         i = i + 1
 
     movie1 = pd.DataFrame(data=movie_list)
-    movie1.to_csv('./movie1.csv', encoding='gbk', index=False, header=False)
+    movie1.to_csv('./movie1.csv', encoding='utf8', index=False, header=False)
 
 
 
